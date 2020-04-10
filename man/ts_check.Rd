@@ -23,9 +23,14 @@ tibble/data.frame of the form:
 \description{
 Check taxonomic spelling
 }
+\details{
+uninomials only for now
+}
 \examples{
+\dontrun{
 x <- c("Helianthus", "Helianthos", "Helionthus",
 "Helianthuss", "helianthus", "Hellianthos")
 (z <- ts_check(x))
 z$suggestions
+}
 }

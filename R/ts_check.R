@@ -7,13 +7,15 @@
 #' - match (logical): whether an exact match was found
 #' - matches (character): the matched named, if an exact match was found
 #' - suggestions (list): if no match found, a vector of suggestions
+#' @details uninomials only for now
 #' @examples \dontrun{
 #' x <- c("Helianthus", "Helianthos", "Helionthus",
 #' "Helianthuss", "helianthus", "Hellianthos")
 #' (z <- ts_check(x))
 #' z$suggestions
 #' }
-ts_check <- function(x, dict = ts_dict("plants_tpl")) {
+ts_check <- function(x, dict = ts_dict("tpl")) {
+  assert(x, "character")
   z <- hunspell_check(x, dict = dict)
   matches <- vector(mode = "character", length = length(z))
   suggs <- vector(mode = "list", length = length(z))

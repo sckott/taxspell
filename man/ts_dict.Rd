@@ -4,11 +4,12 @@
 \alias{ts_dict}
 \title{Check taxonomic spelling}
 \usage{
-ts_dict(x = "plants_tpl")
+ts_dict(x = "tpl")
 }
 \arguments{
-\item{x}{(character) dictionary to use. default: "plants_tpl".
-other options will be added, including custom ones}
+\item{x}{(character) dictionary to use. options:
+"tpl" (The Plant List), "taxamatch_ref" (TAXAMATCH
+reference dictionary). default: "tpl".}
 }
 \value{
 path to location of the dictionary files
@@ -17,5 +18,7 @@ path to location of the dictionary files
 Check taxonomic spelling
 }
 \examples{
+\dontrun{
 ts_dict()
+}
 }
