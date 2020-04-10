@@ -14,7 +14,7 @@ jobs:
       r: release
       env: R_CODECOV=true
 
-r_check_args: "--as-cran --run-dontrun --no-build-vignettes --no-manual"
+r_check_args: "--as-cran --no-build-vignettes --no-manual"
 
 after_success:
   - if [[ "${R_CODECOV}" ]]; then R -e 'covr::codecov()'; fi
