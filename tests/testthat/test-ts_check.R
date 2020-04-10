@@ -1,4 +1,7 @@
 test_that("ts_check", {
+  skip_on_cran()
+  skip_on_travis()
+
   x <- c("Helianthus", "Helianthos", "Helionthus",
     "Helianthuss", "helianthus", "Hellianthos")
   z <- ts_check(x)

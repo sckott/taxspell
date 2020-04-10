@@ -4,7 +4,7 @@
 \alias{ts_check}
 \title{Check taxonomic spelling}
 \usage{
-ts_check(x, dict = ts_dict("plants_tpl"))
+ts_check(x, dict = ts_dict("tpl"))
 }
 \arguments{
 \item{x}{(character) vector of taxonomic names. required}
