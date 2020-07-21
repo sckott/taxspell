@@ -1,4 +1,5 @@
 library(testthat)
 library(taxspell)
-
-test_check("taxspell")
+if (.Platform$OS.type != "windows") {
+  test_check("taxspell")
+}
