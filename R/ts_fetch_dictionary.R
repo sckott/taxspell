@@ -10,7 +10,7 @@ ts_fetch_dictionary <- function(x, ...) {
   assert(x, "character")
   assert_len(x, 1)
   paths <- ts_dic_paths(x)
-  urls <- ts_dic_remote(x)  
+  urls <- ts_dic_remote(x)
   download.file(urls[1], paths[1], ...)
   download.file(urls[2], paths[2], ...)
 }
