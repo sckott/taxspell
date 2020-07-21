@@ -1,6 +1,7 @@
 test_that("ts_check", {
   skip_on_cran()
   skip_on_travis()
+  skip_on_os("windows")
 
   x <- c("Helianthus", "Helianthos", "Helionthus",
     "Helianthuss", "helianthus", "Hellianthos")
@@ -17,6 +18,8 @@ test_that("ts_check", {
 })
 
 test_that("ts_check fails well", {
+  skip_on_os("windows")
+  
   expect_error(ts_check())
   expect_error(ts_check(5), class = "simpleError")
 })
