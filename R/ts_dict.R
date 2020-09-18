@@ -32,7 +32,7 @@ ts_dic_paths <- function(x) {
 
 ts_dic_remote <- function(x) {
   base <-
-    "https://raw.githubusercontent.com/ropenscilabs/taxdictionaries/master"
+    "https://raw.githubusercontent.com/sckott/taxdictionaries/master"
   switch(x,
     tpl = file.path(base, c("tpl.dic", "tpl.aff")),
     taxamatch_ref = file.path(base, c("taxamatch_ref.dic", "taxamatch_ref.aff")),

@@ -3,7 +3,7 @@ taxspell
 
 
 
-[![Build Status](https://travis-ci.com/ropenscilabs/taxspell.svg?branch=master)](https://travis-ci.com/ropenscilabs/taxspell)
+[![Build Status](https://travis-ci.com/sckott/taxspell.svg?branch=master)](https://travis-ci.com/sckott/taxspell)
 
 Spell Check Taxonomic Names
 
@@ -14,7 +14,7 @@ Development version
 
 
 ```r
-remotes::install_github("ropenscilabs/taxspell")
+remotes::install_github("sckott/taxspell")
 ```
 
 
@@ -24,12 +24,10 @@ library("taxspell")
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/taxspell/issues)
+* Please [report any issues or bugs](https://github.com/sckott/taxspell/issues)
 * License: MIT
 * Get citation information for `taxspell` in R doing `citation(package = 'taxspell')`
 * Please note that this project is released with a [Contributor Code of Conduct][coc].
 By participating in this project you agree to abide by its terms.
 
-[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
-
-[coc]: https://github.com/ropenscilabs/taxspell/blob/master/CODE_OF_CONDUCT.md
+[coc]: https://github.com/sckott/taxspell/blob/master/CODE_OF_CONDUCT.md
