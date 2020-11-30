@@ -3,8 +3,6 @@ taxspell
 
 
 
-[![Build Status](https://travis-ci.com/sckott/taxspell.svg?branch=master)](https://travis-ci.com/sckott/taxspell)
-
 Spell Check Taxonomic Names
 
 
